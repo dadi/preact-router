@@ -4,7 +4,7 @@ import assertCloneOf from '../test_helpers/assert-clone-of';
 
 chai.use(assertCloneOf);
 
-describe('preact-router', () => {
+describe('preact-router-regex', () => {
 	it('should export Router, Link and route', () => {
 		expect(Router).to.be.a('function');
 		expect(Link).to.be.a('function');

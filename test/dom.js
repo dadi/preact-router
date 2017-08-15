@@ -172,7 +172,7 @@ describe('dom', () => {
 		});
 	});
 	
-	describe('preact-router/match', () => {
+	describe('preact-router-regex/match', () => {
 		describe('<Match>', () => {
 			it('should invoke child function with match status when routing', done => {
 				let spy1 = sinon.spy(),
