@@ -1,11 +1,11 @@
 {
-  "name": "preact-router",
-  "amdName": "preactRouter",
-  "version": "2.5.5",
+  "name": "preact-router-regex",
+  "amdName": "preactRouterRegex",
+  "version": "2.5.7",
   "description": "Connect your components up to that address bar.",
-  "main": "dist/preact-router.js",
-  "jsnext:main": "dist/preact-router.es.js",
-  "module": "dist/preact-router.es.js",
+  "main": "dist/preact-router-regex.js",
+  "jsnext:main": "dist/preact-router-regex.es.js",
+  "module": "dist/preact-router-regex.es.js",
   "scripts": {
     "clean": "rimraf dist/",
     "copy-typescript-definition": "copyfiles -f src/index.d.ts src/match.d.ts .",
@@ -32,16 +32,16 @@
     "preact",
     "router"
   ],
-  "author": "Jason Miller <jason@developit.ca>",
+  "author": "Arthur Mingard <info@arthurmingard.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/developit/preact-router.git"
+    "url": "https://github.com/mingard/preact-router-regex.git"
   },
   "bugs": {
-    "url": "https://github.com/developit/preact-router/issues"
+    "url": "https://github.com/mingard/preact-router-regex/issues"
   },
-  "homepage": "https://github.com/developit/preact-router",
+  "homepage": "https://github.com/mingard/preact-router-regex",
   "peerDependencies": {
     "preact": "*"
   },
