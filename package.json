@@ -1,7 +1,7 @@
 {
-  "name": "preact-router-regex",
+  "name": "@dadi/preact-router",
   "amdName": "preactRouterRegex",
-  "version": "2.5.10",
+  "version": "2.6.1",
   "description": "Connect your components up to that address bar.",
   "main": "dist/preact-router-regex.js",
   "jsnext:main": "dist/preact-router-regex.es.js",
@@ -36,12 +36,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mingard/preact-router.git"
+    "url": "https://github.com/dadi/preact-router.git"
   },
   "bugs": {
-    "url": "https://github.com/mingard/preact-router/issues"
+    "url": "https://github.com/dadi/preact-router/issues"
   },
-  "homepage": "https://github.com/mingard/preact-router",
+  "homepage": "https://github.com/dadi/preact-router",
   "peerDependencies": {
     "preact": "*"
   },
