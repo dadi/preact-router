@@ -62,7 +62,7 @@ export function pathRankSort(a, b) {
 	if (aAttr.default) return 1;
 	if (bAttr.default) return -1;
 	let diff = rank(aAttr.path) - rank(bAttr.path);
-	return diff || -1;
+	return diff || (bAttr.path === '/' ? 1 : -1);
 }
 
 export function segmentize(url) {
