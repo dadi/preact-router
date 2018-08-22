@@ -209,7 +209,7 @@ class Router extends Component {
 	}
 
 	getMatchingChildren(children, url, invoke) {
-		return children.slice().sort(pathRankSort).map( vnode => {
+		return children.slice().map( vnode => {
 			let attrs = vnode.attributes || {},
 				path = attrs.path,
 				matches = exec(url, path, attrs);
@@ -222,7 +222,7 @@ class Router extends Component {
 				return vnode;
 			}
 			return false;
-		}).filter(Boolean);
+		}).filter(Boolean).sort(pathRankSort);
 	}
 
 	render({ children, onChange }, { url }) {
