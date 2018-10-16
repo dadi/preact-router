@@ -209,13 +209,13 @@ class Router extends Component {
 	}
 
 	getMatchingChildren(children, url, invoke) {
-		return children.slice().map( vnode => {
+		return children.slice().map((vnode, index) => {
 			let attrs = vnode.attributes || {},
 				path = attrs.path,
 				matches = exec(url, path, attrs);
 			if (matches) {
 				if (invoke!==false) {
-					let newProps = { url, matches };
+					let newProps = { url, matches, ___index: index };
 					assign(newProps, matches);
 					return cloneElement(vnode, newProps);
 				}
