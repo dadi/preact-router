@@ -43,7 +43,7 @@ describe('util', () => {
 			let paths = arr => arr.map( path => ({attributes:{path}}) );
 
 			expect(
-				paths(['/a/b/','/a/b','/','b']).sort(pathRankSort)
+				paths(['/a/b','/a/b/','/','b']).sort(pathRankSort)
 			).to.eql(
 				paths(['/','b','/a/b','/a/b/'])
 			);
@@ -53,7 +53,7 @@ describe('util', () => {
 			let paths = arr => arr.map( path => ({attributes:{path}}) );
 
 			let defaultPath = {attributes:{default:true}};
-			let p = paths(['/a/b/','/a/b','/','b']);
+			let p = paths(['/a/b','/a/b/','/','b']);
 			p.splice(2,0,defaultPath);
 
 			expect(

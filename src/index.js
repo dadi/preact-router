@@ -222,7 +222,11 @@ class Router extends Component {
 				return vnode;
 			}
 			return false;
-		}).filter(Boolean).sort(pathRankSort);
+		}).filter(Boolean).sort(pathRankSort).map(vnode => {
+			delete vnode.attributes.___index;
+
+			return vnode;
+		});
 	}
 
 	render({ children, onChange }, { url }) {
